@@ -14,7 +14,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<app.runtime>4.3.0-20210304</app.runtime>
+		<app.runtime>4.3.0</app.runtime>
 		<mule.maven.plugin.version>3.4.2</mule.maven.plugin.version>
 	</properties>
 
@@ -37,13 +37,11 @@
 				      <username>${username}</username>
 				      <password>${password}</password>
 				      <applicationName>${cloudhub.application.name}</applicationName>
-				      <environment>${environment}</environment>
-				      <region>${region}</region>
+				      <environment>${environment}</environment>	
+				      <businessGroup>${business}</businessGroup>			      
 				      <workers>${workers}</workers>
-				      <workerType>${workerType}</workerType>
-				      <properties>
-				        <key>value</key>
-				      </properties>
+				      <workerType>${vCore}</workerType>	
+				      <objectStoreV2>true</objectStoreV2>			     
 				  </cloudHubDeployment>
 				</configuration>
 			</plugin>
